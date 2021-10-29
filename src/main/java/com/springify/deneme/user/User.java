@@ -7,9 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Data
-@Entity
-@Table(name = "users")
+@Data //getter ve setterlar otomatik oluşuyor, lombok özelliği
+@Entity //veritabanında aşağıdaki değişkenlerin adında fieldlar oluşturuyor
+@Table(name = "users") //tablo oluşturuyor
 public class User {
     @Id
     @GeneratedValue
